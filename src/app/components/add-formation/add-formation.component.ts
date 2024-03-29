@@ -47,12 +47,13 @@ export class AddFormationComponent{
           console.log('Formation ajoutée avec succès !', response);
           this.resetForm();
           this.openSnackBar('Formation ajoutée avec succès', 'Fermer');
-    
+          this.router.navigate(['/formations']);
+
         },
         (error) => {
           console.error('Erreur lors de l\'ajout de la formation :', error);
           this.resetForm();
-          //this.router.navigate(['/formations']);
+          this.router.navigate(['/formations']);
           this.openSnackBar('Formation ajoutée avec succès', 'Fermer');
           if (error.error && error.error.message) {
             console.error('Message d\'erreur du serveur :', error.error.message);
