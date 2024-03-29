@@ -1,0 +1,16 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustez la hauteur si nécessaire */
+}
+
+.card-custom-view {
+    width: 30%; /* Largeur raisonnable */
+}
+.custom-heading {
+    padding-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ 

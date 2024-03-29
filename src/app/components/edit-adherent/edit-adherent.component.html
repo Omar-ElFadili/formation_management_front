@@ -1,0 +1,35 @@
+<div class="form-container bg-light">
+    <p-card class="card-custom-view ">
+        <p-header class="text-center">
+            <h3 class="custom-heading">Modifier votre adhérent</h3>
+        </p-header>
+        <div class="form-content">
+            <form>
+                <div class="form-group pmd-textfield pmd-textfield-floating-label mb-3">
+                    <label for="title">name</label>
+                    <input id="title" class="form-control" type="text" name="title" [(ngModel)]="newAdherent.name" required>
+                </div>
+                
+                <div class="form-group pmd-textfield pmd-textfield-floating-label mb-3">
+                    <label for="description">Email</label>
+                    <input type="email" id="description" class="form-control" name="description" [(ngModel)]="newAdherent.contact" required>
+                </div>
+                
+            </form>
+        </div>
+        <p-footer class="text-center mt-3">
+            <button type="button" pButton pRipple class="btn btn-secondary rounded m-1 " (click)="navigateToAdherentList()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="24" fill="currentColor" class="bi bi-skip-backward-btn-fill" viewBox="0 0 16 16">
+                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m11.21-6.907L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.79-.407"/>
+                  </svg>    
+                
+            </button>
+            <button type="button" pButton pRipple class="p-button-success rounded text-center float-end" (click)="updateAdherent()" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="currentColor" class="bi bi-send-arrow-up-fill m-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54L13.026 8.03A4.5 4.5 0 0 0 8 12.5c0 .5 0 1.5-.773.36l-1.59-2.498L.644 7.184l-.002-.001-.41-.261a.5.5 0 0 1 .083-.886l.452-.18.001-.001L15.314.035a.5.5 0 0 1 .54.111M6.637 10.07l7.494-7.494.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154z"/>
+                    <path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708z"/>
+                  </svg>Enregistrer
+            </button>
+        </p-footer>
+    </p-card>
+</div>

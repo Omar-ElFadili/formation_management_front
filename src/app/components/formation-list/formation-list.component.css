@@ -1,0 +1,17 @@
+.input-search {
+    justify-content: end;
+    margin-top: 5px;
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .input-search:focus {
+    outline: none;
+    border-color: #ff00ea; 
+  }
+  
